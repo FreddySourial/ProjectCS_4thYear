@@ -19,7 +19,6 @@
 		E4FA12BF29B3386A00C65F06 /* BusinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12BE29B3386A00C65F06 /* BusinessView.swift */; };
 		E4FA12C129B3388B00C65F06 /* createnewaccountUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12C029B3388B00C65F06 /* createnewaccountUIView.swift */; };
 		E4FA12C329B338B400C65F06 /* historyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12C229B338B400C65F06 /* historyView.swift */; };
-		E4FA12C529B338D200C65F06 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12C429B338D200C65F06 /* homeView.swift */; };
 		E4FA12C729B338F100C65F06 /* liveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12C629B338F100C65F06 /* liveView.swift */; };
 		E4FA12C929B3391200C65F06 /* mapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12C829B3391200C65F06 /* mapController.swift */; };
 		E4FA12CB29B3392900C65F06 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12CA29B3392900C65F06 /* mapView.swift */; };
@@ -32,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E47D37C629B3EF3400113489 /* ProjectCS-4thYear-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProjectCS-4thYear-Info.plist"; sourceTree = SOURCE_ROOT; };
 		E4FA12A229B335A300C65F06 /* ProjectCS_4thYear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCS_4thYear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCS_4thYearApp.swift; sourceTree = "<group>"; };
 		E4FA12A729B335A300C65F06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,7 +44,6 @@
 		E4FA12BE29B3386A00C65F06 /* BusinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessView.swift; sourceTree = "<group>"; };
 		E4FA12C029B3388B00C65F06 /* createnewaccountUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createnewaccountUIView.swift; sourceTree = "<group>"; };
 		E4FA12C229B338B400C65F06 /* historyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = historyView.swift; sourceTree = "<group>"; };
-		E4FA12C429B338D200C65F06 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		E4FA12C629B338F100C65F06 /* liveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liveView.swift; sourceTree = "<group>"; };
 		E4FA12C829B3391200C65F06 /* mapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapController.swift; sourceTree = "<group>"; };
 		E4FA12CA29B3392900C65F06 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
@@ -87,12 +86,12 @@
 		E4FA12A429B335A300C65F06 /* ProjectCS_4thYear */ = {
 			isa = PBXGroup;
 			children = (
+				E47D37C629B3EF3400113489 /* ProjectCS-4thYear-Info.plist */,
 				E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */,
 				E4FA12A729B335A300C65F06 /* ContentView.swift */,
 				E4FA12CE29B3395D00C65F06 /* NavigationView.swift */,
 				E4FA12D629B339DC00C65F06 /* viewView.swift */,
 				E4FA12C029B3388B00C65F06 /* createnewaccountUIView.swift */,
-				E4FA12C429B338D200C65F06 /* homeView.swift */,
 				E4FA12C629B338F100C65F06 /* liveView.swift */,
 				E4FA12CA29B3392900C65F06 /* mapView.swift */,
 				E4FA12CC29B3394000C65F06 /* myProfileView.swift */,
@@ -214,7 +213,6 @@
 				E4FA12C729B338F100C65F06 /* liveView.swift in Sources */,
 				E4FA12B929B3381C00C65F06 /* action.swift in Sources */,
 				E4FA12C129B3388B00C65F06 /* createnewaccountUIView.swift in Sources */,
-				E4FA12C529B338D200C65F06 /* homeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +344,9 @@
 				DEVELOPMENT_TEAM = L6UNLH3P6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProjectCS-4thYear-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME) uses Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -375,6 +376,9 @@
 				DEVELOPMENT_TEAM = L6UNLH3P6X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ProjectCS-4thYear-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME) uses Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
