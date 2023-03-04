@@ -29,6 +29,11 @@ extension BluetoothViewModel: CBCentralManagerDelegate {
         if !peripherals.contains(peripheral) {
             self.peripherals.append(peripheral)
             self.peripheralNames.append(peripheral.name ?? "unnamed device")
+            print("Peripheral name: \(peripheral.name)")
+            if (peripheral.name=="Freddy’s Apple Watch"){
+                print("Connected OH BABBBYYYYY")
+            }
+                
         }
     }
 }
