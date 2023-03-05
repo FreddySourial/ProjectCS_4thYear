@@ -34,8 +34,8 @@ extension BluetoothViewModel: CBCentralManagerDelegate {
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         
-      var n=2
-        if (n<=10) {
+//      var n=2
+//        if (n<=10) {
             
         
         
@@ -48,7 +48,7 @@ extension BluetoothViewModel: CBCentralManagerDelegate {
                 
                 
             
-                if (peripheral.name=="MX Master"){
+                if (peripheral.name=="BlueNRG"){
                     bleconnect = true
                     bleconnect1 = true
                     print("Connected OH BABBBYYYYY")
@@ -56,22 +56,21 @@ extension BluetoothViewModel: CBCentralManagerDelegate {
                     
                     //                "Freddy’s MacBook Pro"
                     
-                } else if (peripheral.name != "MX Master") {
-                    bleconnect1 = false
-                    print("NO CONNECT")
-                    print (bleconnect1)
                 }
+//                else if (peripheral.name != "MX Master") {
+//                    bleconnect1 = false
+//                    print("NO CONNECT")
+//                    print (bleconnect1)
+//                }
                 //            else if (peripheral.name != "Freddy’s iPad") {
                 //                    bleconnect1 = false
                 //                    print("NO CONNECT")
                 //                    print (bleconnect1)
                 //
                 //                }
-                
-                
-                n+=2
-                print(n)
-            }
+//                n+=2
+//                print(n)
+//            }
         
         }
         

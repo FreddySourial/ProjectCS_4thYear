@@ -96,12 +96,12 @@
 				E4FA12CA29B3392900C65F06 /* mapView.swift */,
 				E4FA12CC29B3394000C65F06 /* myProfileView.swift */,
 				E4FA12C229B338B400C65F06 /* historyView.swift */,
-				E4FA12BE29B3386A00C65F06 /* BusinessView.swift */,
-				E4FA12C829B3391200C65F06 /* mapController.swift */,
 				E4FA12D429B339CB00C65F06 /* viewModel.swift */,
 				E4FA12D029B3399F00C65F06 /* users.swift */,
 				E4FA12D229B339B800C65F06 /* variables.swift */,
 				E4FA12BA29B3383600C65F06 /* bluetooth.swift */,
+				E4FA12BE29B3386A00C65F06 /* BusinessView.swift */,
+				E4FA12C829B3391200C65F06 /* mapController.swift */,
 				E4FA12BC29B3385300C65F06 /* Business.swift */,
 				E4FA12B829B3381C00C65F06 /* action.swift */,
 				E4FA12A929B335A400C65F06 /* Assets.xcassets */,
@@ -345,6 +345,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProjectCS-4thYear-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME) uses Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -377,6 +378,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ProjectCS-4thYear-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME) uses Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

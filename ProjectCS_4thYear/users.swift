@@ -9,8 +9,8 @@ import Foundation
 
 struct Users: Identifiable {
     var id: String
-    var username1: String
-    var password1: String
+    var usernameR: String
+    var passwordR: String
     
     
 }

@@ -13,6 +13,8 @@ class MapController: ObservableObject {
     @Published private(set) var businesses = [Business]()
     @Published private(set) var selectedBusiness: Business?
     @Published private(set) var actions = [Action]()
+    var latitude = ""
+    var longitude = ""
     
     var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 45.3876, longitude: -75.6960), latitudinalMeters: 1600 , longitudinalMeters: 1600)
     
@@ -54,7 +56,7 @@ class MapController: ObservableObject {
     }
     func createActions(){
         actions = [
-            Action(title: "Directions", image: "car.fill"){ [weak self] in
+            Action(title: "Drive", image: "car.fill"){ [weak self] in
                 guard let self = self else {return}
                 self.openMap(coordinate: self.selectedBusiness!.coordinate)
             },

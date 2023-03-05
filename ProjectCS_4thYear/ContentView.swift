@@ -101,9 +101,9 @@ struct ContentView: View {
     }
         
     func authenticateUser(username: String, password: String) {
-        if username.lowercased() == (username2) {
+        if username.lowercased() == (usernameR) {
             wrongUsername = 0
-            if password.lowercased() == (password2) {
+            if password.lowercased() == (passwordR) {
                 wrongPassword = 0
                 showingLoginScreen = true
 

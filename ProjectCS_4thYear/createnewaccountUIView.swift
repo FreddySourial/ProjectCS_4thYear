@@ -10,8 +10,8 @@ import SwiftUI
 struct createnewaccountUIView: View {
     @ObservedObject var model = ViewModel()
     
-    @State var password1 = ""
-    @State var username1 = ""
+    @State var passwordR = ""
+    @State var usernameR = ""
     @State var showingalert: Bool = false
     @State var showingalert1: Bool = false
     @State private var text: String = ""
@@ -30,11 +30,11 @@ struct createnewaccountUIView: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                 HStack {
-                    TextField ("username1 ", text: $username1) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color,lineWidth:1))
+                    TextField ("username ", text: $usernameR) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color,lineWidth:1))
                         .foregroundColor(color)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.all)
-                        .onChange(of: username1) { text in
+                        .onChange(of: usernameR) { text in
                             let letters = text.trimmingCharacters(in: .whitespaces).count
                             self.count = letters
                             
@@ -54,11 +54,11 @@ struct createnewaccountUIView: View {
 //                    Text("\(count)")
                 }
                
-                TextField("password1", text: $password1) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color2,lineWidth:1))
+                TextField("password", text: $passwordR) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color2,lineWidth:1))
                     .foregroundColor(color2)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.all)
-                    .onChange(of: password1) { text1 in
+                    .onChange(of: passwordR) { text1 in
                         let letters2 = text1.trimmingCharacters(in: .whitespaces).count
                         self.count2 = letters2
                         
@@ -94,9 +94,9 @@ struct createnewaccountUIView: View {
                             title: Text("Create New Account?"),
                     message: Text ("Are you sure you want to create a new account?"),
                             primaryButton: .default(Text("Yes")){
-                                model.addUser(username1: username1, password1: password1)
-                                username1 = ""
-                                password1 = ""
+                                model.addUser(usernameR: usernameR, passwordR: passwordR)
+                                usernameR = ""
+                                passwordR = ""
                                 showingalert1 = true
                             },
                             secondaryButton: .cancel(){}

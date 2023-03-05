@@ -6,8 +6,8 @@
 //
 
 import Foundation
-var username2 = "fredy"
-var password2 = "fredy"
+var usernameR = "fredy"
+var passwordR = "fredy"
 
 struct Variables: Identifiable {
     var id: String

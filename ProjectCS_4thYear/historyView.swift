@@ -12,8 +12,8 @@ struct historyView: View {
     
     @State var location = ""
     @State var address = ""
-    @State var password1 = ""
-    @State var username1 = ""
+    @State var passwordR = ""
+    @State var usernameR = ""
     
     var body: some View {
         VStack {
@@ -42,7 +42,12 @@ struct historyView: View {
 //
 //                }
 //            }
+            List (model.listusers) {item in
+                Text(item.usernameR)
                 
+                Text (item.passwordR)
+                
+            }
                 /////////////////////////////////////////
             List (model.list) { item in
                 HStack {
@@ -51,6 +56,7 @@ struct historyView: View {
                     
                     Text(item.address)
                     
+                
                     //update button
 //                    Button(action: {
 //                        model.updateData(todoToUpdate: item)
@@ -68,7 +74,10 @@ struct historyView: View {
                     })
                     .buttonStyle(BorderlessButtonStyle())
 
-                }
+                    
+                    
+                    
+                } //hstsck brackets
                 
             }
          Divider()
@@ -100,6 +109,7 @@ struct historyView: View {
         
     init(){
         model.getData()
+        model.getUsers()
 //        model.getUsers()
     }
   
