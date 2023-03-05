@@ -12,6 +12,9 @@ class BluetoothViewModel: NSObject, ObservableObject {
     private var centralManager: CBCentralManager?
     private var peripherals: [CBPeripheral] = []
     @Published var peripheralNames: [String] = []
+    @Published var bleconnect1 = false
+    private var bleconnect = false
+    private var fake =  false
     
     override init() {
         super.init()
@@ -26,23 +29,51 @@ extension BluetoothViewModel: CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        
+        
         if !peripherals.contains(peripheral) {
             self.peripherals.append(peripheral)
             self.peripheralNames.append(peripheral.name ?? "unnamed device")
             print("Peripheral name: \(peripheral.name)")
-            if (peripheral.name=="Freddy’s Apple Watch"){
+            
+            
+            if (peripheral.name=="MX Master"){
+                bleconnect = true
+                bleconnect1 = true
                 print("Connected OH BABBBYYYYY")
-            }
+                print (bleconnect)
                 
+//                "Freddy’s MacBook Pro"
+                
+            }
+            
         }
     }
 }
 
+ 
+
 struct bluetooth: View {
+    
+    
+    
+    
+    @State private var togglebutton = false
+    @State public var isconnected = false
+    
     @ObservedObject private var bluetoothViewModel = BluetoothViewModel()
     
     var body: some View {
         VStack{
+            
+            if bluetoothViewModel.bleconnect1 == true {
+                Text("Daddyy")
+            } else {
+                Text ("BOOOO")
+            }
+            Text("test \(bluetoothViewModel.bleconnect1)" as String)
+            Toggle ("Is Bluetooth connected?" , isOn: $togglebutton)
+            
             Text("Peripherals")
             NavigationView {
                 List(bluetoothViewModel.peripheralNames, id: \.self) { peripheral in

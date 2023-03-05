@@ -110,7 +110,7 @@ struct createnewaccountUIView: View {
 //                    message: Text ("Your new account has been created! Please go back and Login"))
                     
                     .padding()
-            }.padding(.all) .overlay(RoundedRectangle(cornerRadius:5) .stroke(.black,lineWidth:2))
+            }.padding(.all) .overlay(RoundedRectangle(cornerRadius:5) .stroke(.gray,lineWidth:2))
         } .padding(.all, 20.0)
     }
 }
