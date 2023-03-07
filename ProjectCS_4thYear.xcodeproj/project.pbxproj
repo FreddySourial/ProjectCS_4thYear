@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E47D37F929B6F3A800113489 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E47D37F829B6F3A800113489 /* FirebaseAuth */; };
+		E47D37FB29B6F4EE00113489 /* logintest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D37FA29B6F4EE00113489 /* logintest.swift */; };
 		E4FA12A629B335A300C65F06 /* ProjectCS_4thYearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */; };
 		E4FA12A829B335A300C65F06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A729B335A300C65F06 /* ContentView.swift */; };
 		E4FA12AA29B335A400C65F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FA12A929B335A400C65F06 /* Assets.xcassets */; };
@@ -32,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		E47D37C629B3EF3400113489 /* ProjectCS-4thYear-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProjectCS-4thYear-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E47D37FA29B6F4EE00113489 /* logintest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logintest.swift; sourceTree = "<group>"; };
 		E4FA12A229B335A300C65F06 /* ProjectCS_4thYear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCS_4thYear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCS_4thYearApp.swift; sourceTree = "<group>"; };
 		E4FA12A729B335A300C65F06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,17 +64,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4FA12B729B3379800C65F06 /* FirebaseFirestore in Frameworks */,
+				E47D37F929B6F3A800113489 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E47D37F729B6F3A800113489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E4FA129929B335A300C65F06 = {
 			isa = PBXGroup;
 			children = (
 				E4FA12A429B335A300C65F06 /* ProjectCS_4thYear */,
 				E4FA12A329B335A300C65F06 /* Products */,
+				E47D37F729B6F3A800113489 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,7 @@
 				E4FA12CA29B3392900C65F06 /* mapView.swift */,
 				E4FA12CC29B3394000C65F06 /* myProfileView.swift */,
 				E4FA12C229B338B400C65F06 /* historyView.swift */,
+				E47D37FA29B6F4EE00113489 /* logintest.swift */,
 				E4FA12D429B339CB00C65F06 /* viewModel.swift */,
 				E4FA12D029B3399F00C65F06 /* users.swift */,
 				E4FA12D229B339B800C65F06 /* variables.swift */,
@@ -137,6 +150,7 @@
 			name = ProjectCS_4thYear;
 			packageProductDependencies = (
 				E4FA12B629B3379800C65F06 /* FirebaseFirestore */,
+				E47D37F829B6F3A800113489 /* FirebaseAuth */,
 			);
 			productName = ProjectCS_4thYear;
 			productReference = E4FA12A229B335A300C65F06 /* ProjectCS_4thYear.app */;
@@ -197,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4FA12CF29B3395D00C65F06 /* NavigationView.swift in Sources */,
+				E47D37FB29B6F4EE00113489 /* logintest.swift in Sources */,
 				E4FA12D129B3399F00C65F06 /* users.swift in Sources */,
 				E4FA12CD29B3394000C65F06 /* myProfileView.swift in Sources */,
 				E4FA12D329B339B800C65F06 /* variables.swift in Sources */,
@@ -434,6 +449,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E47D37F829B6F3A800113489 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4FA12B529B3379800C65F06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		E4FA12B629B3379800C65F06 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E4FA12B529B3379800C65F06 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
