@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
 struct ContentView: View {
     
     @State private var username = ""
@@ -64,7 +65,19 @@ struct ContentView: View {
                     .border(.red, width: CGFloat(wrongPassword))
                 
                 Button("Login") {
-                                        authenticateUser(username: username, password: password)
+                                       
+                    Auth.auth().signIn(withEmail: username, password: password) {
+                        authResult, error in
+                        if let error = error {
+                            print(error)
+                            return
+                        }
+                        if let authResult = authResult {
+                            print (authResult)
+                            showingLoginScreen = true
+                        }
+                    }
+                   // authenticateUser(username: username, password: password)
                 
                 }
                 .foregroundColor(.white)

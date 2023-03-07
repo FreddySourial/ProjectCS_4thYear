@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		E47D37F929B6F3A800113489 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E47D37F829B6F3A800113489 /* FirebaseAuth */; };
-		E47D37FB29B6F4EE00113489 /* logintest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D37FA29B6F4EE00113489 /* logintest.swift */; };
+		E47D380C29B70C4400113489 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380929B70C4400113489 /* LoginView.swift */; };
+		E47D380D29B70C4400113489 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380A29B70C4400113489 /* AuthView.swift */; };
+		E47D380E29B70C4400113489 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380B29B70C4400113489 /* SignupView.swift */; };
+		E47D381029B70C9000113489 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380F29B70C9000113489 /* String.swift */; };
 		E4FA12A629B335A300C65F06 /* ProjectCS_4thYearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */; };
 		E4FA12A829B335A300C65F06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A729B335A300C65F06 /* ContentView.swift */; };
 		E4FA12AA29B335A400C65F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FA12A929B335A400C65F06 /* Assets.xcassets */; };
@@ -34,7 +37,10 @@
 
 /* Begin PBXFileReference section */
 		E47D37C629B3EF3400113489 /* ProjectCS-4thYear-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ProjectCS-4thYear-Info.plist"; sourceTree = SOURCE_ROOT; };
-		E47D37FA29B6F4EE00113489 /* logintest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logintest.swift; sourceTree = "<group>"; };
+		E47D380929B70C4400113489 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E47D380A29B70C4400113489 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		E47D380B29B70C4400113489 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		E47D380F29B70C9000113489 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E4FA12A229B335A300C65F06 /* ProjectCS_4thYear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCS_4thYear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCS_4thYearApp.swift; sourceTree = "<group>"; };
 		E4FA12A729B335A300C65F06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E47D37FC29B6F5F800113489 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		E47D37FD29B6F61400113489 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				E47D37FE29B6F63E00113489 /* views */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		E47D37FE29B6F63E00113489 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				E47D380F29B70C9000113489 /* String.swift */,
+				E47D380A29B70C4400113489 /* AuthView.swift */,
+				E47D380929B70C4400113489 /* LoginView.swift */,
+				E47D380B29B70C4400113489 /* SignupView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		E4FA129929B335A300C65F06 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +130,8 @@
 		E4FA12A429B335A300C65F06 /* ProjectCS_4thYear */ = {
 			isa = PBXGroup;
 			children = (
+				E47D37FD29B6F61400113489 /* base */,
+				E47D37FC29B6F5F800113489 /* Feature */,
 				E47D37C629B3EF3400113489 /* ProjectCS-4thYear-Info.plist */,
 				E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */,
 				E4FA12A729B335A300C65F06 /* ContentView.swift */,
@@ -108,7 +142,6 @@
 				E4FA12CA29B3392900C65F06 /* mapView.swift */,
 				E4FA12CC29B3394000C65F06 /* myProfileView.swift */,
 				E4FA12C229B338B400C65F06 /* historyView.swift */,
-				E47D37FA29B6F4EE00113489 /* logintest.swift */,
 				E4FA12D429B339CB00C65F06 /* viewModel.swift */,
 				E4FA12D029B3399F00C65F06 /* users.swift */,
 				E4FA12D229B339B800C65F06 /* variables.swift */,
@@ -210,12 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47D380E29B70C4400113489 /* SignupView.swift in Sources */,
 				E4FA12CF29B3395D00C65F06 /* NavigationView.swift in Sources */,
-				E47D37FB29B6F4EE00113489 /* logintest.swift in Sources */,
 				E4FA12D129B3399F00C65F06 /* users.swift in Sources */,
 				E4FA12CD29B3394000C65F06 /* myProfileView.swift in Sources */,
 				E4FA12D329B339B800C65F06 /* variables.swift in Sources */,
 				E4FA12D529B339CB00C65F06 /* viewModel.swift in Sources */,
+				E47D380D29B70C4400113489 /* AuthView.swift in Sources */,
 				E4FA12BF29B3386A00C65F06 /* BusinessView.swift in Sources */,
 				E4FA12C329B338B400C65F06 /* historyView.swift in Sources */,
 				E4FA12D729B339DC00C65F06 /* viewView.swift in Sources */,
@@ -226,6 +260,8 @@
 				E4FA12A629B335A300C65F06 /* ProjectCS_4thYearApp.swift in Sources */,
 				E4FA12BD29B3385300C65F06 /* Business.swift in Sources */,
 				E4FA12C729B338F100C65F06 /* liveView.swift in Sources */,
+				E47D380C29B70C4400113489 /* LoginView.swift in Sources */,
+				E47D381029B70C9000113489 /* String.swift in Sources */,
 				E4FA12B929B3381C00C65F06 /* action.swift in Sources */,
 				E4FA12C129B3388B00C65F06 /* createnewaccountUIView.swift in Sources */,
 			);

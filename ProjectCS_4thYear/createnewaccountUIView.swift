@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct createnewaccountUIView: View {
     @ObservedObject var model = ViewModel()
     
-    @State var passwordR = ""
-    @State var usernameR = ""
+    @State var password = ""
+    @State var username = ""
     @State var showingalert: Bool = false
     @State var showingalert1: Bool = false
     @State private var text: String = ""
@@ -30,7 +32,7 @@ struct createnewaccountUIView: View {
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                 HStack {
-                    TextField ("username ", text: $usernameR) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color,lineWidth:1))
+                    TextField ("username ", text: $username) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color,lineWidth:1))
                         .foregroundColor(color)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.all)
@@ -54,7 +56,7 @@ struct createnewaccountUIView: View {
 //                    Text("\(count)")
                 }
                
-                TextField("password", text: $passwordR) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color2,lineWidth:1))
+                SecureField("password", text: $password) .overlay(RoundedRectangle(cornerRadius:5) .stroke(color2,lineWidth:1))
                     .foregroundColor(color2)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.all)
@@ -76,6 +78,18 @@ struct createnewaccountUIView: View {
                     }
                 Button(action: {
                     
+                    Auth.auth().createUser(withEmail: username, password: password) {
+                        authResult, error in
+                        if let error = error {
+                            print(error)
+                            return
+                        }
+                        if let authResult = authResult {
+                            print (authResult)
+                        }
+                    }
+                    
+                    
 //                    model.addUser(username1: username1, password1: password1)
 //                    username1 = ""
 //                    password1 = ""
@@ -94,6 +108,17 @@ struct createnewaccountUIView: View {
                             title: Text("Create New Account?"),
                     message: Text ("Are you sure you want to create a new account?"),
                             primaryButton: .default(Text("Yes")){
+                                Auth.auth().createUser(withEmail: username, password: password) {
+                                    authResult, error in
+                                    if let error = error {
+                                        print(error)
+                                        return
+                                    }
+                                    if let authResult = authResult {
+                                        print (authResult)
+                                    }
+                                }
+//                                Auth.auth().createUser(withEmail: usernameR, password: passwordR)
                                 model.addUser(usernameR: usernameR, passwordR: passwordR)
                                 usernameR = ""
                                 passwordR = ""
