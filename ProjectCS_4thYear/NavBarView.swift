@@ -26,7 +26,7 @@ struct NavBarView: View {
                                           Text("Map")
                                       }
                    NavigationLink(
-                       destination: BLE()) {
+                       destination: SwiftBluetoothView()) {
                                           Text("View4")
                                       }
                }

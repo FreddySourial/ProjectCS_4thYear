@@ -15,7 +15,7 @@ import FirebaseAuth
 
 
 struct ProjectCS_4thYearApp: App {
-    @ObservedObject var appState = AppState(hasOnboarded: false)
+
     init(){
         FirebaseApp.configure()
     }
@@ -24,21 +24,14 @@ struct ProjectCS_4thYearApp: App {
 //            NavigationView {
 //                logintest()
 //            }
-            if appState.hasOnboarded {
-                myProfileView()
-                    .environmentObject(appState)
-            } else {
+    
+          
                 
                 
                 ContentView()
-                    .environmentObject(appState)
-            }
+                    
+            
             }
     }
 }
-class AppState: ObservableObject {
-    @Published var hasOnboarded: Bool
-    init(hasOnboarded: Bool) {
-        self.hasOnboarded = hasOnboarded
-    }
-}
+

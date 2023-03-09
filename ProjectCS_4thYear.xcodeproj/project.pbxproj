@@ -14,6 +14,9 @@
 		E47D381029B70C9000113489 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380F29B70C9000113489 /* String.swift */; };
 		E4F5E2B429B9940F00E05189 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5E2B329B9940F00E05189 /* NavBarView.swift */; };
 		E4F5E2B629B9A37900E05189 /* BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5E2B529B9A37900E05189 /* BLE.swift */; };
+		E4F5E2C529B9AC9400E05189 /* testSBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5E2C429B9AC9400E05189 /* testSBView.swift */; };
+		E4F5E2C729B9AF1800E05189 /* SwiftBluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5E2C629B9AF1800E05189 /* SwiftBluetoothView.swift */; };
+		E4F5E2C929B9B01B00E05189 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F5E2C829B9B01B00E05189 /* CoreBluetooth.framework */; };
 		E4FA12A629B335A300C65F06 /* ProjectCS_4thYearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */; };
 		E4FA12A829B335A300C65F06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A729B335A300C65F06 /* ContentView.swift */; };
 		E4FA12AA29B335A400C65F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FA12A929B335A400C65F06 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		E47D380F29B70C9000113489 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E4F5E2B329B9940F00E05189 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		E4F5E2B529B9A37900E05189 /* BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE.swift; sourceTree = "<group>"; };
+		E4F5E2C429B9AC9400E05189 /* testSBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testSBView.swift; sourceTree = "<group>"; };
+		E4F5E2C629B9AF1800E05189 /* SwiftBluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBluetoothView.swift; sourceTree = "<group>"; };
+		E4F5E2C829B9B01B00E05189 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		E4FA12A229B335A300C65F06 /* ProjectCS_4thYear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCS_4thYear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCS_4thYearApp.swift; sourceTree = "<group>"; };
 		E4FA12A729B335A300C65F06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4FA12B729B3379800C65F06 /* FirebaseFirestore in Frameworks */,
+				E4F5E2C929B9B01B00E05189 /* CoreBluetooth.framework in Frameworks */,
 				E47D37F929B6F3A800113489 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,15 +91,9 @@
 		E47D37F729B6F3A800113489 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4F5E2C829B9B01B00E05189 /* CoreBluetooth.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E47D37FC29B6F5F800113489 /* Feature */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Feature;
 			sourceTree = "<group>";
 		};
 		E47D37FD29B6F61400113489 /* base */ = {
@@ -135,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				E47D37FD29B6F61400113489 /* base */,
-				E47D37FC29B6F5F800113489 /* Feature */,
 				E47D37C629B3EF3400113489 /* ProjectCS-4thYear-Info.plist */,
 				E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */,
 				E4FA12A729B335A300C65F06 /* ContentView.swift */,
@@ -144,6 +144,7 @@
 				E4FA12D629B339DC00C65F06 /* viewView.swift */,
 				E4FA12C029B3388B00C65F06 /* createnewaccountUIView.swift */,
 				E4FA12C629B338F100C65F06 /* liveView.swift */,
+				E4F5E2C629B9AF1800E05189 /* SwiftBluetoothView.swift */,
 				E4FA12CA29B3392900C65F06 /* mapView.swift */,
 				E4FA12CC29B3394000C65F06 /* myProfileView.swift */,
 				E4FA12C229B338B400C65F06 /* historyView.swift */,
@@ -153,6 +154,7 @@
 				E4FA12BA29B3383600C65F06 /* bluetooth.swift */,
 				E4F5E2B529B9A37900E05189 /* BLE.swift */,
 				E4FA12BE29B3386A00C65F06 /* BusinessView.swift */,
+				E4F5E2C429B9AC9400E05189 /* testSBView.swift */,
 				E4FA12C829B3391200C65F06 /* mapController.swift */,
 				E4FA12BC29B3385300C65F06 /* Business.swift */,
 				E4FA12B829B3381C00C65F06 /* action.swift */,
@@ -252,6 +254,7 @@
 				E47D380E29B70C4400113489 /* SignupView.swift in Sources */,
 				E4FA12CF29B3395D00C65F06 /* NavigationView.swift in Sources */,
 				E4FA12D129B3399F00C65F06 /* users.swift in Sources */,
+				E4F5E2C529B9AC9400E05189 /* testSBView.swift in Sources */,
 				E4FA12CD29B3394000C65F06 /* myProfileView.swift in Sources */,
 				E4FA12D329B339B800C65F06 /* variables.swift in Sources */,
 				E4FA12D529B339CB00C65F06 /* viewModel.swift in Sources */,
@@ -262,6 +265,7 @@
 				E4FA12BB29B3383600C65F06 /* bluetooth.swift in Sources */,
 				E4FA12A829B335A300C65F06 /* ContentView.swift in Sources */,
 				E4FA12C929B3391200C65F06 /* mapController.swift in Sources */,
+				E4F5E2C729B9AF1800E05189 /* SwiftBluetoothView.swift in Sources */,
 				E4FA12CB29B3392900C65F06 /* mapView.swift in Sources */,
 				E4F5E2B629B9A37900E05189 /* BLE.swift in Sources */,
 				E4FA12A629B335A300C65F06 /* ProjectCS_4thYearApp.swift in Sources */,
@@ -328,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -382,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -406,7 +410,7 @@
 				INFOPLIST_FILE = "ProjectCS-4thYear-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME) uses Bluetooth";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "ProjectCS_4thYear uses Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,7 +443,7 @@
 				INFOPLIST_FILE = "ProjectCS-4thYear-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME) uses Bluetooth";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "ProjectCS_4thYear uses Bluetooth";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

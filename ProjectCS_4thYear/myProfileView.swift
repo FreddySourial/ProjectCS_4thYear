@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct myProfileView: View {
-    @EnvironmentObject var appState: AppState
+    
     var body: some View {
         
         Text("My profile view")
