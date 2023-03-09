@@ -74,7 +74,7 @@ struct ContentView: View {
                         }
                         if let authResult = authResult {
                             print (authResult)
-                            showingLoginScreen = true
+//                            showingLoginScreen = true
                         }
                     }
                    // authenticateUser(username: username, password: password)
