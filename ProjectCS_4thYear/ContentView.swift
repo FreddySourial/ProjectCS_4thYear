@@ -67,7 +67,7 @@ struct ContentView: View {
                     .border(.red, width: CGFloat(wrongPassword))
                 
                 Button("Login") {
-                    isButtonClicked = true
+                    
                     Auth.auth().signIn(withEmail: username, password: password) {
                         authResult, error in
                         if let error = error {
@@ -75,6 +75,7 @@ struct ContentView: View {
                             return
                         }
                         if let authResult = authResult {
+                            isButtonClicked = true
                             print (authResult)
                             //                            showingLoginScreen = true
                         }
@@ -124,9 +125,9 @@ struct ContentView: View {
                     NavigationLink(destination: NavBarView(), isActive: $showingLoginScreen) {
                         // empty closure
                     }.navigationBarHidden(true)
-                        .onAppear() {
-                            showingLoginScreen = true
-                        }
+//                        .onAppear() {
+//                            showingLoginScreen = true
+//                        }
                 
                 
                     
