@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreBluetooth
 import Firebase
 import FirebaseCore
 import FirebaseAuth

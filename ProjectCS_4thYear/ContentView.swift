@@ -124,7 +124,7 @@ struct ContentView: View {
                
                     NavigationLink(destination: NavBarView(), isActive: $showingLoginScreen) {
                         // empty closure
-                    }.navigationBarHidden(true)
+                    }
 //                        .onAppear() {
 //                            showingLoginScreen = true
 //                        }
