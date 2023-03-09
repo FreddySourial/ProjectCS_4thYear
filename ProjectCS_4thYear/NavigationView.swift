@@ -1,56 +1,56 @@
+////
+////  NavigatingView.swift
+////  test.app
+////
+////  Created by Freddy Sourial on 2023-03-02.
+////
 //
-//  NavigatingView.swift
-//  test.app
+//import SwiftUI
 //
-//  Created by Freddy Sourial on 2023-03-02.
+//struct NavigatingView: View {
+//    @EnvironmentObject var appState: AppState
+//    var body: some View {
+//        TabView{
+//                   NavigationView {
+////                       HomeView()
+//                       bluetooth()
 //
-
-import SwiftUI
-
-struct NavigatingView: View {
-    @EnvironmentObject var appState: AppState
-    var body: some View {
-        TabView{
-                   NavigationView {
-//                       HomeView()
-                       bluetooth()
-                           
-
-                   }
-
-
-                   .tabItem {
-                       Image("ic-tasklist")
-                           .renderingMode(.template)
-                   }
-
-                   historyView()
-                       .padding(.bottom, 5.0)
-                       .tabItem {
-                           Image("ic-reminders")
-                               .renderingMode(.template)
-                       }.padding()
-                   myProfileView()
-                       .padding(.bottom, 5.0)
-                       .tabItem {
-                           Image("ic-settings")
-                               .renderingMode(.template)
-                       }.padding()
-                   viewView()
-                       .padding(.bottom, 5.0)
-                       .tabItem {
-                           Image("ic-inbox")
-                               .renderingMode(.template)
-                       }
-
-
-               }
-               }
-                   
-           }
-
-struct NavigatingView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigatingView()
-    }
-}
+//
+//                   }
+//
+//
+//                   .tabItem {
+//                       Image("ic-tasklist")
+//                           .renderingMode(.template)
+//                   }
+//
+//                   historyView()
+//                       .padding(.bottom, 5.0)
+//                       .tabItem {
+//                           Image("ic-reminders")
+//                               .renderingMode(.template)
+//                       }.padding()
+//                   myProfileView()
+//                       .padding(.bottom, 5.0)
+//                       .tabItem {
+//                           Image("ic-settings")
+//                               .renderingMode(.template)
+//                       }.padding()
+//                   viewView()
+//                       .padding(.bottom, 5.0)
+//                       .tabItem {
+//                           Image("ic-inbox")
+//                               .renderingMode(.template)
+//                       }
+//
+//
+//               }
+//               }
+//
+//           }
+//
+//struct NavigatingView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NavigatingView()
+//    }
+//}

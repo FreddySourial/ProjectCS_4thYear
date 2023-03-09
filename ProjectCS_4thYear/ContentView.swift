@@ -10,6 +10,8 @@ import Firebase
 import FirebaseAuth
 struct ContentView: View {
     
+    
+    @State private var isButtonClicked = false
     @State private var username = ""
     @State private var password = ""
     @State private var wrongUsername: Float = 0
@@ -65,7 +67,7 @@ struct ContentView: View {
                     .border(.red, width: CGFloat(wrongPassword))
                 
                 Button("Login") {
-                                       
+                    isButtonClicked = true
                     Auth.auth().signIn(withEmail: username, password: password) {
                         authResult, error in
                         if let error = error {
@@ -74,12 +76,19 @@ struct ContentView: View {
                         }
                         if let authResult = authResult {
                             print (authResult)
-//                            showingLoginScreen = true
+                            //                            showingLoginScreen = true
                         }
                     }
-                   // authenticateUser(username: username, password: password)
-                
+                    // authenticateUser(username: username, password: password)
+  
+                    
+                  
+                    
                 }
+
+               
+                
+                
                 .foregroundColor(.white)
                 .frame(width: 300, height: 50)
                 .background(Color.blue)
@@ -102,12 +111,39 @@ struct ContentView: View {
 //
 //
 //                           }
-                NavigationLink(destination: NavigatingView(), isActive: $showingLoginScreen) {
-                                   
-                                   
-                               }
+//                NavigationLink(destination: NavBarView(), isActive: $showingLoginScreen) {
+//
+//
+//                               }
+//
                 
-            }.navigationBarHidden(false)
+                
+               
+                
+               
+                    NavigationLink(destination: NavBarView(), isActive: $showingLoginScreen) {
+                        // empty closure
+                    }.navigationBarHidden(true)
+                        .onAppear() {
+                            showingLoginScreen = true
+                        }
+                
+                
+                    
+                
+                
+            }
+            
+            if isButtonClicked {
+                            Text("Hello, World!")
+                                .onAppear {
+                                    showingLoginScreen = true
+                                    // This will be executed only once the button is clicked
+                                    print("View appeared after button was clicked")
+                                }
+                        }
+            
+//            .navigationBarHidden(false)
             Spacer()
         }
         }

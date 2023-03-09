@@ -12,6 +12,7 @@
 		E47D380D29B70C4400113489 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380A29B70C4400113489 /* AuthView.swift */; };
 		E47D380E29B70C4400113489 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380B29B70C4400113489 /* SignupView.swift */; };
 		E47D381029B70C9000113489 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47D380F29B70C9000113489 /* String.swift */; };
+		E4F5E2B429B9940F00E05189 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5E2B329B9940F00E05189 /* NavBarView.swift */; };
 		E4FA12A629B335A300C65F06 /* ProjectCS_4thYearApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */; };
 		E4FA12A829B335A300C65F06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA12A729B335A300C65F06 /* ContentView.swift */; };
 		E4FA12AA29B335A400C65F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FA12A929B335A400C65F06 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		E47D380A29B70C4400113489 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		E47D380B29B70C4400113489 /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		E47D380F29B70C9000113489 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E4F5E2B329B9940F00E05189 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		E4FA12A229B335A300C65F06 /* ProjectCS_4thYear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCS_4thYear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCS_4thYearApp.swift; sourceTree = "<group>"; };
 		E4FA12A729B335A300C65F06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				E47D37C629B3EF3400113489 /* ProjectCS-4thYear-Info.plist */,
 				E4FA12A529B335A300C65F06 /* ProjectCS_4thYearApp.swift */,
 				E4FA12A729B335A300C65F06 /* ContentView.swift */,
+				E4F5E2B329B9940F00E05189 /* NavBarView.swift */,
 				E4FA12CE29B3395D00C65F06 /* NavigationView.swift */,
 				E4FA12D629B339DC00C65F06 /* viewView.swift */,
 				E4FA12C029B3388B00C65F06 /* createnewaccountUIView.swift */,
@@ -259,6 +262,7 @@
 				E4FA12CB29B3392900C65F06 /* mapView.swift in Sources */,
 				E4FA12A629B335A300C65F06 /* ProjectCS_4thYearApp.swift in Sources */,
 				E4FA12BD29B3385300C65F06 /* Business.swift in Sources */,
+				E4F5E2B429B9940F00E05189 /* NavBarView.swift in Sources */,
 				E4FA12C729B338F100C65F06 /* liveView.swift in Sources */,
 				E47D380C29B70C4400113489 /* LoginView.swift in Sources */,
 				E47D381029B70C9000113489 /* String.swift in Sources */,
