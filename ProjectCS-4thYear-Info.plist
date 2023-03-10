@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key></key>
+	<string></string>
+	<key>NSBluetoothServices</key>
+	<array>
+		<string></string>
+	</array>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>User-facing description of why your app uses Bluetooth.</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>User-facing description of why your app uses Bluetooth.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string></string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string></string>
+</dict>
+</plist>

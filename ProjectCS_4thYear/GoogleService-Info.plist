@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>App uses Bluetooth to find, connect and communicate with nearby devices. Please grant access.</string>
+	<key>CLIENT_ID</key>
+	<string>756679901431-80dsnme1mchqdarljd5athn3fgbnr9eo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.756679901431-80dsnme1mchqdarljd5athn3fgbnr9eo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCirvmUwmaOCKDUZd4gNVtnzB7MjSWpNYU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>756679901431</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.freddysourial.ProjectCS-4thYear</string>
+	<key>PROJECT_ID</key>
+	<string>projectcsplwd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>projectcsplwd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:756679901431:ios:54d358b4579a2c2eb993f2</string>
+</dict>
+</plist>
